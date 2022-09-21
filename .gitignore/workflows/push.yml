@@ -1,0 +1,11 @@
+name: push
+
+on:
+  push:
+    branches:
+      - 'dev'
+      - '!staging'
+      - 'feat/*'
+    paths:
+      - '**.ts'
+      - 'test/**'
