@@ -9,10 +9,6 @@ on:
     paths:
       - '**.ts'
       - 'test/**'
-  pull_request:
-    types:
-      - opened
-      - closed
 jobs:
   print-username:
     runs-on: ubuntu-latest

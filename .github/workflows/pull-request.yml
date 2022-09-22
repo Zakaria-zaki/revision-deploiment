@@ -1,7 +1,10 @@
 name: pull request
 
 on:
-  push:
+  pull_request:
+    types:
+      - opened
+      - closed
 jobs:
   print-username:
     runs-on: ubuntu-latest
