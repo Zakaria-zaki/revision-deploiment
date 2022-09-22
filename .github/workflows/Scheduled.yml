@@ -3,7 +3,7 @@ name: push
 on:
   push:
   schedule:
-    - cron: '*/5****'
+    - cron: '*/5 * * * *'
 
 jobs:
   print-username:
