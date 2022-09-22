@@ -1,14 +1,6 @@
-name: push
+name: pull request
 
 on:
-  push:
-    branches:
-      - 'dev'
-      - '!staging'
-      - 'feat/*'
-    paths:
-      - '**.ts'
-      - 'test/**'
   pull_request:
     types:
       - opened
