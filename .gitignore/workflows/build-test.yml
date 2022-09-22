@@ -1,5 +1,0 @@
-name: exercice 1
-on:
-  push:
-    branches:
-      - 'dev'

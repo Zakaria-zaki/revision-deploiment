@@ -1,0 +1,14 @@
+name: pull request
+
+on:
+  pull_request:
+    types:
+      - opened
+      - closed
+jobs:
+  print-username:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print the input name to STDOUT
+        run: echo The username is ${{ inputs.username }}
