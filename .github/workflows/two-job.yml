@@ -1,11 +1,11 @@
 name: push
 
-on:
-  push:
+on: issue_comment
 
 jobs:
   job1:
     runs-on: ubuntu-latest
+    if: $ {{ github.event.issue.push }}
 
     steps:
       - name: Execute job 1
@@ -13,6 +13,7 @@ jobs:
 
   job2:
     runs-on: ubuntu-latest
+    if: $ {{ github.event.issue.push }}
 
     steps:
       - name: Execute job 2
