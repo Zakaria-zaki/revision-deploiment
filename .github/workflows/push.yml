@@ -4,11 +4,6 @@ on:
   push:
     branches:
       - 'dev'
-      - '!staging'
-      - 'feat/*'
-    paths:
-      - '**.ts'
-      - 'test/**'
 jobs:
   print-username:
     runs-on: ubuntu-latest
