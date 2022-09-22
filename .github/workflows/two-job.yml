@@ -1,0 +1,21 @@
+name: push
+
+on:
+  push:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.issue.pull_request }}
+
+    steps:
+      - name: Execute job 1
+        run: echo job 1
+
+  job2:
+    runs-on: ubuntu-latest
+    if: ${{ !github.event.issue.pull_request }}
+
+    steps:
+      - name: Execute job 2
+        run: echo job 2
